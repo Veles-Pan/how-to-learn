@@ -1,25 +1,93 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
+  position: relative;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  justify-content: space-between;
+  flex-direction: row;
 }
+
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  color: #f2f2f2;
+}
+
+.footer__elements {
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  width: 25%;
+  text-align: center;
+}
+
+.footer__logo {
+  height: 35px;
+  width: 183px;
+}
+
+.texts {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 18px;
+}
+
+.header__left-elements {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 5;
+}
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +97,48 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+.title {
+  position: relative;
+  left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  width: 730px;
+}
+
+.subtitle {
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+  width: 183px;
+}
+
+.main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.border1 {
+  border: 1px solid blue;
+}
+
