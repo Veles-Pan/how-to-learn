@@ -284,10 +284,6 @@
   z-index: 5;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-}
-
 .header__title {
   position: relative;
   margin: 0;
@@ -344,6 +340,7 @@
 
 .table__cell_theme_dark {
   padding-bottom: 80px;
+  width: 200px;
 }
 
 .table__cell_theme_light {
