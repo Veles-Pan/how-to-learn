@@ -181,6 +181,10 @@
   font-size: 36px;
 }
 
+.feynman__link:hover {
+  text-decoration: underline;
+}
+
 .kaufman {
   background-color: #1f1f1f;
   padding-top: 90px;
@@ -255,6 +259,10 @@
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  text-decoration: underline;
+}
+
 .footer__column_content_social {
   text-align: left;
 }
@@ -299,6 +307,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
 }
 
 .logo {
